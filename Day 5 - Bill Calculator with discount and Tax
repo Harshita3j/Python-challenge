@@ -1,0 +1,12 @@
+print("Bill calculator with tax and discount")
+
+bill = int(input("please enter the bill amount."))
+bill += int(input('please enter tip to be paid.'))
+if bill > 12: 
+    bill += bill*.12 #Tax
+    bill -= 2 #Dicount
+else :
+    bill += bill*.10
+    bill -= 1
+ 
+print('Final bill comes to', bill)
