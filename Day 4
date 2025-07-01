@@ -1,0 +1,20 @@
+print("Game - Reach the cupcake.\nYou have three boxes of cupcake in front of you, Green, Yellow and Red.One of which has a cupcake. If you choose the right one you win else you will lose the game. Start the game to try your luck.")
+print("Shopkeeper : Which color did little Red riding hood liked?")
+a = input()
+if a == "Red" or "RED" or "red":
+    print("You got this. Here is a cupcake for you!")
+    print('''      
+         (.)
+         .|.
+         l7J
+         | |
+     _.--| |--._
+  .-';  ;`-'& ; `&.
+ & &  ;  &   ; ;   \
+ \      ;    &   &_/
+  F"""---...---"""J
+  | | | | | | | | |
+  J | | | | | | | F
+   `---.|.|.|.---''')
+else: 
+    print("Better luck next time!")
