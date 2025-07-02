@@ -1,0 +1,63 @@
+# ROCK PAPER SCISSORS GAME
+
+Rock ="""
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+"""
+
+Paper ="""
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+"""
+
+Scissors = """
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+"""
+
+user = input("What you choose, type 0 for Rock, 1 for paper and 2 for scissors?\n")
+if user == "0":
+    print(Rock)
+if user == "1":
+    print(Paper)
+if user == "2":
+    print(Scissors)
+
+import random
+print("Computer Chooses:")
+list = [Rock,Paper,Scissors]
+random_item = random.choice(list)
+print(random_item)
+
+if random_item == Rock and user =="0":
+    print("It's a Tie!")
+if random_item == Paper and user =="1":
+    print("It's a Tie!")
+if random_item == Scissors and user =="2":
+    print("It's a Tie!")
+
+if random_item == Rock and user =="1":
+    print("You Win!")  
+if random_item == Paper and user =="2":
+    print("You Win!")
+if random_item == Scissors and user =="0":
+    print("You Win!")
+
+if random_item == Scissors and user =="1":
+    print("You Loose!")
+if random_item == Rock and user =="2":
+    print("You Loose!")
+if random_item == Paper and user =="0":
+    print("You Loose!")
